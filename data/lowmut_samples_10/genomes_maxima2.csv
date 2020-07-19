@@ -1,0 +1,11 @@
+"res_ab","mut","pop","repl","upd","nbits","geno","fit","scf","msg","reg","sense","n_null","del_msg_scf","peak"
+"100k","l",500,9,100000,1703459,"wzcagcHpukEmbCwByvAIlCqyycuopcBypsuGdwvyuADKvybAcAajqBDBAucBpbJLsBBBBwucBBBBEEdcBBBBBBBGByBBBBBBbBBBBBEBBBBBvLBzvvhaxgab",0,15.35,42,5,5,115,15.37,2
+"10k","l",200,15,100000,760569,"wzcagcwHsBEelGGqpuuvrycyucuopcurKBvEByysBryyBBpBDcBBBkBuBsBGDAsEpBApsfqAurABLxoByAGBBBvBEBpsBBBsmvBBqAIDyBsiyjAzvvdaxgab",38.5536,15.38,30,5,5,113,15.25,2
+"1000k","l",200,46,100000,755102,"wzcagcBkbfEAscdmAuGnjvysyucopcuDcyccIADbfjokaKqKrdcudouGGAlcrBBBBBBBBBBBBvBBBEJBBBBABvBBBEBBBBBBBBvBBBBBBBEBBBBzvvoaxgab",51.3969,15.44,45,7,7,115,15.91,2
+"100k","l",500,34,100000,1818214,"wzcagcIuAbEapHviAvuCovByycuopcuycjAGEaxvjaBaoopaaIqAJqxdrBoyBEtrBBBBBBBytaBBBtBABBBBBBBsBBBBBsrBBBBBBBEBByBBBBBzvvoaxgab",0,15.35,42,1,1,115,15.37,2
+"10k","l",200,34,100000,741056,"wzcagciiEAEkDzqCAAKqomKyycuwGourBBBBEtBBApAJbBBBABuBbBBBBrozpKzoefylpcwndkBBbaBqAGBrvbirJDsaApGILtAsBvucABEBBBBzvvmaxgab",11.7797,15.26,28,7,7,110,15,2
+"10k","l",500,20,100000,1768332,"wzcagcEAzbEpeccaDaJlpCpyycuoucqypBkIbputxBByvqAfIIJuvLBADGBjBjAJABuIwAaAArfAeeBByBfDIIlpKBjABAdBurBBBEBBEBBBBBBzvvDaxgab",25.5623,15.3,29,9,9,109,13.26,2
+"10k","l",500,34,100000,1830079,"wjzagcepcjEDnLcsfJCzAoqyycuopcuEBDqBBLycdaADDfArBjBBBBwvBtvBvLBBqBBBBxcytvBarjmlBIBBBBBBBBnBLABBnBnxEBByyczELFrzvvncxgab",9.62603,15.36,37,9,9,116,15.42,2
+"100k","l",500,42,100000,1728782,"wzcagcjzxEEvoAlCAHzAJBLyycuopburuBEBdBwBByBBEBBBBBABAmBpBBBBBjsyBBfnrfwoBBvvBDBaBBAyIAGptABDnrBBBBBBBBBBvBBBnBBzvvhaxgab",50.7848,15.43,47,4,4,112,15.04,2
+"8k","l",500,34,100000,1828520,"wzjagcoxuaEitaDImzkkHAdyycuopcuypnBJABEbBuGGmnAfDywmAsAoDwBvvEooqyuDqIqAfrBBqjEJpBfyBBBpBanuAuaDpupreBBBBtBaBayzvvyaxgap",0,15.41,22,5,5,113,15.02,2
+"1000k","l",500,10,100000,1840329,"wzcagcisfjEJCvABjaAowIsyycuopcucBBEBByEBBBBqcBBBBBmBBBBvBBbuByBBBBtBvBBrBFBBBdByBBBBGBBBBEvGBBBBBBBBBBBEBBBBByczvvtcxgab",54.4847,15.26,58,2,2,118,15.3,2
