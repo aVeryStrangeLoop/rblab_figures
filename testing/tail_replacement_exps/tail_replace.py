@@ -83,7 +83,7 @@ def get_evol_genomes(upd):
 
 counter = 1
 for init_genome in genomes:
-    mod_genome = replace_tail(genome,tail_sequence)
+    mod_genome = replace_tail(init_genome,tail_sequence)
     for repl in REPLs:
         do_evo_run(mod_genome)
         for upd in UPDs:
