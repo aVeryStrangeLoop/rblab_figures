@@ -15,10 +15,4 @@ p <- ggplot(data_h,aes(x=res_f,y=pop_f)) +
   labs(fill="Proportion")
 p
 
-## Palettes
-## p0 Greens
-## p1 blues
-## p2 Oranges
-## p3 Purples
-## p4 Reds
 
