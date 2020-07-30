@@ -4,8 +4,8 @@ from get_merit import *
 from get_fitness import *
 from get_mu_msg import *
 
-REPLs = range(5)
-UPDs = range(0,5001,1000)
+REPLs = [0] #range(5)
+UPDs = [1000] #range(0,5001,1000)
 sample_file = sys.argv[1]
 tail_sequence = "zvvvvxgab"
 ofilename = sample_file.split("/")[-1].split(".")[0] + "_tra.csv" #Tail replace analysis
@@ -48,6 +48,7 @@ def replace_tail(genome,tail_sequence):
     return "".join(new_genome)
         
 def do_evo_run(genome):
+    os.system("rm -r evo-chamber/data")
     os.chdir("evo-chamber/")
     event_lines = []
     with open("events_bkup.cfg") as efile:
@@ -77,13 +78,15 @@ def get_evol_genomes(upd):
                 if line[0]!="#" and line[0]!="\n" and len(words)==21:
                     genome = words[16]
                     evol_genomes.append(genome)
-    except:
-        print("Could not find detail file at update %d, skipping..." % upd)
-    return evol_genomes
+        return evol_genomes
+    
+    except FileNotFoundError:
+        print("Detail file for upd : %d does not exist. skipping." % upd)
+        return evol_genomes
 
 counter = 1
 for init_genome in genomes:
-    mod_genome = replace_tail(genome,tail_sequence)
+    mod_genome = replace_tail(init_genome,tail_sequence)
     for repl in REPLs:
         do_evo_run(mod_genome)
         for upd in UPDs:
