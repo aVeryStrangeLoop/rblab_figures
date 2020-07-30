@@ -1,0 +1,14 @@
+processing genome num 1, repl 0, upd 1000
+Traceback (most recent call last):
+  File "tail_replace.py", line 89, in <module>
+    evolved_genomes = get_evol_genomes(upd)
+  File "tail_replace.py", line 73, in get_evol_genomes
+    with open("evo-chamber/data/detail-"+str(upd)+".spop") as ufile:
+FileNotFoundError: [Errno 2] No such file or directory: 'evo-chamber/data/detail-1000.spop'
+processing genome num 1, repl 0, upd 1000
+Traceback (most recent call last):
+  File "tail_replace.py", line 89, in <module>
+    evolved_genomes = get_evol_genomes(upd)
+  File "tail_replace.py", line 73, in get_evol_genomes
+    with open("evo-chamber/data/detail-"+str(upd)+".spop") as ufile:
+FileNotFoundError: [Errno 2] No such file or directory: 'evo-chamber/data/detail-1000.spop'
