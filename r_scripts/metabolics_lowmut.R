@@ -20,12 +20,14 @@ data <- rbind(data,data2)
 data <- rbind(data,data3)
 data <- rbind(data,data4)
 
-
+library(ggpubr)
+my_comparisons <- list(c("1","2"),c("1","3"),c("2","3"))
 ## Plot merits
 p_merit <- ggplot(data,aes(x=peak,y=merit,color=factor(1))) +
-  geom_boxplot() + ylim(110,NA) + theme_minimal() +
+  geom_boxplot() + ylim(110,126) + theme_minimal() +
   xlab("Peak") + ylab("Merit") + theme(legend.position="None")
-p_merit
+p_merit + stat_compare_means(method = "wilcox.test",comparisons = my_comparisons,label = "p.signif", tip.length=0.005, label.y = c(120, 122.5, 125))
+
 
 ## Plot task spectrum
 data_reshaped <- data %>% select(peak, task.0, task.1, task.2, task.3, task.4, task.5, task.6, task.7, task.8) %>%
@@ -38,8 +40,9 @@ task_labels <- c("NOT","NAND","AND","ORN","OR","ANDN","NOR","XOR","EQU")
 p_task <- ggplot(data_reshaped,aes(x=task,y=num,fill=peak)) + geom_boxplot(outlier.shape = NA) 
 p_task  + facet_grid(peak~.,labeller = label_both) + theme_minimal() + 
   xlab("Task Complexity") + ylab("Instances per genome") + theme(legend.position = "None") +
-  scale_x_discrete(labels= task_labels)
+  scale_x_discrete(labels= task_labels) + coord_cartesian(ylim=c(0,50))
 
 
 check_data <- data_reshaped[data_reshaped$peak==4 & data_reshaped$task=="task.8",]
 quantile(check_data$num)
+

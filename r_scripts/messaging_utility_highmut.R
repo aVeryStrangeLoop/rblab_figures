@@ -16,10 +16,11 @@ data <- data0
 data <- rbind(data,data1)
 data <- rbind(data,data2)
 data <- rbind(data,data3)
-
+library(ggpubr)
+my_comparisons <- list(c("0","1"),c("1","2"))
 ## Plot merits
 p_mum <- ggplot(data,aes(x=peak,y=(scf-del_msg_scf) / scf,color=1)) +
   geom_jitter(aes(alpha=0.0001),width=0.2) + geom_boxplot(outlier.shape = NA) + coord_cartesian(ylim=c(NA, 0.5)) + theme_minimal()  +
   xlab("Peak") + ylab("Marginal utility of messaging") + theme(legend.position="None")
-p_mum
+p_mum + stat_compare_means(method = "wilcox.test",comparisons = my_comparisons,label = "p.signif", tip.length=0.01, label.y = c(0.3,0.4))
 

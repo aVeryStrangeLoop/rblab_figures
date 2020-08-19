@@ -17,12 +17,14 @@ data <- rbind(data,data1)
 data <- rbind(data,data2)
 data <- rbind(data,data3)
 
+library(ggpubr)
+my_comparisons <- list(c("1","2"))
 
 ## Plot merits
 p_merit <- ggplot(data,aes(x=peak,y=merit,color=factor(1))) +
   geom_boxplot() + ylim(105,NA) + theme_minimal() +
   xlab("Peak") + ylab("Merit") + theme(legend.position="None")
-p_merit
+p_merit+ stat_compare_means(method = "wilcox.test",comparisons = my_comparisons,label = "p.signif", tip.length=0.005, label.y = c(120))
 
 
 ## Plot task spectrum
