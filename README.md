@@ -1,3 +1,3 @@
 # rblab_figures
 
-Figures for RBLab manuscript.
+Figures and data for RBLab manuscript.

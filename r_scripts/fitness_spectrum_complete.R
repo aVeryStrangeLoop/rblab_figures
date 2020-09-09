@@ -1,8 +1,6 @@
 library(ggplot2)
 data <- read.csv("~/wsl_files/rblab/rblab_figures/data/data_w_mech.csv")
 
-
-
 # Low mutation rate
 data_l <- data[data$scf!=0 & data$mut=="l" & data$res_ab=="10k" & data$pop==500,] #Only low mutation condition at high res_ab, high pop
 plot_l <- ggplot(data=data_l,aes(x=scf)) + geom_density()
